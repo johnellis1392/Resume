@@ -1,5 +1,30 @@
 .wrapper {
-  /* */
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .left {
+    position: relative;
+
+    .name {
+      width: 100%;
+      height: auto;
+
+      font-size: 30px;
+      font-family: arial;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: auto;
+    text-align: right;
+  }
 }
 
 

@@ -1,0 +1,35 @@
+{
+  "header": "Education",
+  "sources": [
+    {
+      "location": "California State University Sacramento",
+      "rewards": "BS, Computer Science",
+      "subtitle": "September 2010 - December 2015, Sacramento, CA",
+      "items": [
+        { "description": "Dean’s Honor Roll: Computer Science 2012-2015" },
+        { "description": "Coursework: Data Structures, Algorithm Analysis, OpenGL, Compiler Design, and OS Architecture" }
+      ]
+    },
+    {
+      "location": "Coursera",
+      "rewards": "Various Awards",
+      "subtitle": "December 2014 - Present",
+      "items": [
+        { "description": "Received Certificate of Completion for Andrew Ng’s Machine Learning course and Stanford Online Learning Resources’ Programming Language Construction course" },
+        { "description": "Currently Enrolled in several courses including Neural Networks for Machine Learning, Principles of Computational Investing, and Functional Reactive Programming" }
+      ]
+    },
+    {
+      "location": "Udacity",
+      "rewards": "Various Awards",
+      "subtitle": "December 2014 - Present",
+      "items": [
+        { "description": "Currently enrolled in Udacity’s Artificial Intelligence Nanodegree Program" },
+        { "description": "Has taken various courses including Deep Learning, Operating System Principles, Cryptography, Android Development, and iOS Development" },
+        { "description": "Enrolled in many other courses including Cognitive Systems, Data Science, Artificial Intelligence for Robotics, and many more" }
+      ]
+    }
+
+  ]
+}
+

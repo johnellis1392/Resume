@@ -1,0 +1,16 @@
+$spacerSize: 3px;
+$spacerColor: #333;
+
+.wrapper {
+  position: relative;
+  horizontal-align: middle;
+  display: flex;
+  justify-content: space-around;
+  
+  .spacer {
+    width: 70%;
+    height: $spacerSize;
+    background-color: $spacerColor;
+  }
+}
+

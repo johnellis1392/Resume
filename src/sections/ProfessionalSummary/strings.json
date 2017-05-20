@@ -1,0 +1,10 @@
+{
+  "header": "Professional Summary",
+  "summary": "Entry-level Software Engineer with knowledge of a variety of programming languages, frameworks, and platforms, looking to break into the Software Engineering field",
+  "items": [
+    { "label": "Proficient in:", "description": "Haskell, Scala, Javascript, Java, Python, C, SQL, VB, Node.js, MongoDB, OOP & FP, Testing & Debugging" },
+    { "label": "Familiar with:", "description": "Clojure, Rust, C#, C++, Go, Coffeescript, Typescript" },
+    { "label": "Frameworks:", "description": "React.js, Redux, React Native, Express.js, Angular.js, Spray, Rails, JQuery, Moustache, Backbone, Marionette" }
+  ]
+}
+

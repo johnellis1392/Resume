@@ -1,0 +1,33 @@
+{
+  "header": "Work Experience",
+  "jobs": [
+    {
+      "company": "Digital Foundry",
+      "position": "Software Engineer",
+      "subtitle": "October 2016 - Present, Tiburon, CA",
+      "items": [
+        { "description": "Created dynamic, responsive user interfaces for third-party clients using frameworks such as React and Redux, Backbone and Marionette, and automation utilities such as webpack, gulp, and vagrant" },
+        { "description": "Following the SCRUM software development process, Performed daily stand-up meetings, aided in biweekly product presentations, and interacted directly with clients to ensure correctness and robustness of deliverables" },
+        { "description": "Made decisions that impacted the architecture of applications, including component layouts and object-oriented breakdown of requirements" },
+        { "description": "Employed Test-Driven Development to ensure the correctness and testability of all software components" },
+        { "description": "Worked directly with Product Managers and Consultants to translate client-made wireframes into application components" },
+        { "description": "Communicated regularly with co-workers, attending bi-weekly technical presentations, aiding others in understanding important design choices, maintaining a good rapport with peers and superiors, and pair-programming when needed to maximize effective software construction" }
+      ]
+    },
+    {
+      "company": "Inspironix",
+      "position": "Software Engineer",
+      "subtitle": "August 2015 - March 2016,  Sacramento, CA",
+      "items": [
+        { "description": "Aided in writing a School’s Emergency Alert System that tracked student check-ins to find unaccounted-for students, and dynamically updated important information using AJAX, Moustache, and SignalR" },
+        { "description": "Converted  paper test evaluations to electronic documents by converting test forms to SQL Schemas, and creating a PDF parser for printing evaluations from database" },
+        { "description": "Created printable Student ID cards and a check-in mechanism using ID card printer and scanner drivers" },
+        { "description": "Made a desktop app for scanning Hospital’s Patient Care Reports and storing documents via a remote SOAP service" },
+        { "description": "Went above and beyond to hit deadlines while simplifying and scaling application logic" },
+        { "description": "Wrote unit tests for various application components to ensure correctness and robustness" },
+        { "description": "Performed regular maintenance and system updates for legacy websites by communicating with clients, adding new pages, and generating usage reports with Google Analytics" }
+      ]
+    }
+  ]
+}
+

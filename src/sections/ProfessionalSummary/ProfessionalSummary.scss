@@ -1,5 +1,25 @@
 .wrapper {
-  /* */
-}
+  .header {
+    font-size: 24px;
+  }
 
+  .summary {
+    /* */
+  }
+
+  .bulletList {
+    .bulletItem {
+      display: flex;
+      flex-direction: row;
+
+      .label {
+        width: 100px;
+      }
+
+      .description {
+        width: auto;
+      }
+    }
+  }
+}
 

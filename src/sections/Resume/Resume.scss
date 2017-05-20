@@ -1,25 +1,31 @@
 .wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
+  padding: 50px 100px;
 
   .header {
-    /* */
+    width: 100%;
   }
 
   .education {
-    /* */
+    width: 100%;
   }
 
   .professionalSummary {
-    /* */
+    width: 100%;
   }
 
   .projectExperience {
-    /* */
+    width: 100%;
   }
 
   .workExperience {
-    /* */
+    width: 100%;
+  }
+
+  .spacer {
+    width: 100%;
   }
 
 }

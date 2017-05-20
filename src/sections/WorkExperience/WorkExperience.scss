@@ -1,5 +1,28 @@
 .wrapper {
-  /* */
-}
+  .header {
+    /* */
+  }
 
+  .workHistory {
+    .job {
+      .summary {
+        display: flex;
+        flex-direction: row;
+
+        .company { /* */ }
+        .position { /* */ }
+      }
+
+      .subtitle {
+        /* */
+      }
+
+      .itemList {
+        .item {
+          .description { /* */ }
+        }
+      }
+    }
+  }
+}
 
