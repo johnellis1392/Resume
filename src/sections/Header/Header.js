@@ -1,13 +1,19 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styles from './Header.scss'
-import strings from './strings.json'
 
 
 export default class Header extends Component {
 
   static propTypes = {
-    className: PropTypes.string
+    className: PropTypes.string,
+    data: PropTypes.shape({
+      name: PropTypes.string,
+      phone: PropTypes.string,
+      email: PropTypes.string,
+      github: PropTypes.string,
+      gitlab: PropTypes.string
+    })
   }
 
   static defaultProps = {
@@ -15,17 +21,24 @@ export default class Header extends Component {
   }
 
   render () {
-    let className = `${styles.wrapper} ${this.props.className}`
+    const className = `${styles.wrapper} ${this.props.className}`
+    const {
+      name,
+      phone,
+      email,
+      github,
+      gitlab
+    } = this.props.data
     return (
       <div className={className}>
         <div className={styles.left}>
-          <div className={styles.name}>{strings.name}</div>
+          <div className={styles.name}>{name}</div>
         </div>
         <div className={styles.right}>
-          <div>{strings.phone}</div>
-          <div>{strings.email}</div>
-          <div>{strings.github}</div>
-          <div>{strings.gitlab}</div>
+          <div>{phone}</div>
+          <div>{email}</div>
+          <div>{github}</div>
+          <div>{gitlab}</div>
         </div>
       </div>
     )

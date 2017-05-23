@@ -14,20 +14,36 @@ import styles from './Resume.scss'
 
 export default class Resume extends Component {
 
-  static propTypes = {}
+  static propTypes = {
+    data: PropTypes.shape({
+      education: PropTypes.object,
+      header: PropTypes.object,
+      professionalSummary: PropTypes.object,
+      projectExperience: PropTypes.object,
+      workExperience: PropTypes.object
+    })
+  }
 
   render () {
+    const {
+      header,
+      education,
+      professionalSummary,
+      projectExperience,
+      workExperience
+    } = this.props.data
+
     return (
       <div className={styles.wrapper}>
-        <Header className={styles.header} />
+        <Header data={header} className={styles.header} />
         <Spacer className={styles.spacer} />
-        <ProfessionalSummary className={styles.professionalSummary} />
+        <ProfessionalSummary data={professionalSummary} className={styles.professionalSummary} />
         <Spacer className={styles.spacer} />
-        <WorkExperience className={styles.workExperience} />
+        <WorkExperience data={workExperience} className={styles.workExperience} />
         <Spacer className={styles.spacer} />
-        <ProjectExperience className={styles.projectExperience} />
+        <ProjectExperience data={projectExperience} className={styles.projectExperience} />
         <Spacer className={styles.spacer} />
-        <Education className={styles.education} />
+        <Education data={education} className={styles.education} />
       </div>
     )
   }
