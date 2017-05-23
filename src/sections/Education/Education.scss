@@ -1,4 +1,25 @@
 .wrapper {
-  /* */
+  .header { /* */ }
+
+  .title {
+    display: flex;
+    flex-direction: row;
+
+    .location {
+      padding-right: 10px;
+    }
+
+    .rewards {
+      padding-left: 10px;
+    }
+  }
+
+  .subtitle { /* */ }
+
+  .sources {
+    .source {
+      .description { /* */ }
+    }
+  }
 }
 

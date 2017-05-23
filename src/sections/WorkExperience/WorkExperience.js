@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import GlobalStyles from 'common/styles/GlobalStyles.scss'
 import styles from './WorkExperience.scss'
 import strings from './strings.json'
 import _ from 'underscore'
@@ -17,9 +18,9 @@ export default class WorkExperience extends Component {
 
 
   _renderItemList = (items) => {
-    return _.map(items, ({description}) => {
+    return _.map(items, ({description}, index) => {
       return (
-        <div className={styles.item}>
+        <div key={index} className={styles.item}>
           <div className={styles.description}>{description}</div>
         </div>
       )
@@ -27,9 +28,9 @@ export default class WorkExperience extends Component {
   }
 
   _renderWorkHistory = () => {
-    return _.map(strings.jobs, ({company, position, subtitle, items}) => {
+    return _.map(strings.jobs, ({company, position, subtitle, items}, index) => {
       return (
-        <div className={styles.job}>
+        <div key={index} className={styles.job}>
           <div className={styles.summary}>
             <div className={styles.company}>{company}</div>
             <div>/</div>
@@ -48,7 +49,7 @@ export default class WorkExperience extends Component {
     let className = `${styles.wrapper} ${this.props.className}`
     return (
       <div className={className}>
-        <div className={styles.header}>{strings.header}</div>
+        <div className={`${styles.header} ${GlobalStyles.header}`}>{strings.header}</div>
         <div className={styles.workHistory}>
           {this._renderWorkHistory()}
         </div>
