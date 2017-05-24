@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import GlobalStyles from 'common/styles/GlobalStyles.scss'
+import { Bullet } from 'common/components'
 import styles from './Education.scss'
 import _ from 'underscore'
 
@@ -35,6 +36,7 @@ export default class Education extends Component {
     return _.map(items, ({description}, index) => {
       return (
         <div key={index} className={styles.description}>
+          <Bullet />
           {description}
         </div>
       )

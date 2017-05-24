@@ -1,0 +1,11 @@
+@import "~font-awesome/scss/font-awesome.scss";
+
+// @extend .fa;
+// @extend .fa-2x;
+// @extend .fa-3x;
+
+.times {
+  @extend .fa;
+  @extend .fa-times;
+}
+
