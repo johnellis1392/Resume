@@ -32,15 +32,34 @@ module.exports = {
       {
         test: /.scss$/,
         exclude: /node_modules/,
-        use: [
-          'style-loader',
-          'css-loader?importLoaders=1&modules&localIdentName=[local]__[name]__[path]__[hash:base64:5]',
-          'sass-loader',
-        ]
+        // loader: 'style-loader?singleton!css-loader?sourceMap&modules&localIdentName=[local]__[name]___[hash:base64:5]!postcss-loader!resolve-url?silent&keepQuery!sass-loader?sourceMap!sass-resources-loader',
+
+        loaders: [
+          'style-loader?singleton',
+          'css-loader?sourceMap&modules&localIdentName=[local]__[name]___[hash:base64:5]',
+          'postcss-loader',
+          'resolve-url?silent&keepQuery',
+          'sass-loader?sourceMap',
+          // {
+          //   loader: 'sass-resources-loader', 
+          //   options: {
+          //     resources: ['./common/styles/base.scss']
+          //   }
+          // }
+        ],
+
+        // use: [
+        //   'style-loader',
+        //   'css-loader?importLoaders=1&modules&localIdentName=[local]__[name]__[path]__[hash:base64:5]',
+        //   // 'css-loader',
+        //   'sass-loader',
+        // ]
       },
-      // { test: /.css$/, loader: 'style-loader!css-loader' },
-      // { test: /\.(woff2?|ttf|eot|svg)$/, loader: 'url?limit=10000' },
-      // { test: /bootstrap\/dist\/js\/umd\//, loader: 'imports?jQuery=jquery' }, // Load bootstrap content
+      {
+        test: /\.(ico|jpg|png|gif|webp|ttf|otf|eot|svg|woff|woff2)(\?.*)?$/,
+        loader: 'file'
+        // loader: 'url-loader?name=fonts/[name].[ext]'
+      },
       { test: /\.json$/, loader: 'json-loader'},
     ]
   },
