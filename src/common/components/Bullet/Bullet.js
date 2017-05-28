@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-// import faStyles from 'common/components/FontAwesome.scss'
+import img from 'file-loader!../../styles/images/send.png'
 import styles from './Bullet.scss'
 
 
@@ -15,10 +15,11 @@ export default class Bullet extends Component {
   }
 
   render () {
-    const fontAwesomeStyle = ""
-    const className = `${styles.wrapper} ${fontAwesomeStyle} ${this.props.className}`
+    const className = `${styles.wrapper} ${this.props.className}`
     return (
-      <i className={className} />
+      <div className={className}>
+        <img className={styles.img} src={img} />
+      </div>
     )
   }
 }

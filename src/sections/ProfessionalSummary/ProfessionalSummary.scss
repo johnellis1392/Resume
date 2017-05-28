@@ -4,20 +4,24 @@
   }
 
   .summary {
-    /* */
+    margin-bottom: 15px;
   }
 
   .bulletList {
+    padding-left: 25px;
+
     .bulletItem {
       display: flex;
       flex-direction: row;
 
       .label {
-        width: 100px;
+        width: 120px;
+        font-style: italic;
       }
 
       .description {
-        width: auto;
+        width: 100%;
+        word-break: break-word;
       }
     }
   }

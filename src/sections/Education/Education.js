@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import GlobalStyles from 'common/styles/GlobalStyles.scss'
-import { Bullet } from 'common/components'
+import { BulletList, Bullet } from 'common/components'
 import styles from './Education.scss'
 import _ from 'underscore'
 
@@ -32,17 +32,6 @@ export default class Education extends Component {
   }
 
 
-  _renderEducationItems = (items) => {
-    return _.map(items, ({description}, index) => {
-      return (
-        <div key={index} className={styles.description}>
-          <Bullet />
-          {description}
-        </div>
-      )
-    })
-  }
-
   _renderEducation = (sources) => {
     return _.map(sources, ({location, rewards, subtitle, items}, index) => {
       return (
@@ -53,7 +42,13 @@ export default class Education extends Component {
             <div className={styles.rewards}>{rewards}</div>
           </div>
           <div className={styles.subtitle}>{subtitle}</div>
-          {this._renderEducationItems(items)}
+          <BulletList className={styles.items}>
+            {_.map(items, ({description}, index) => {
+              return (
+                <div key={index} className={styles.item}>{description}</div>
+              )
+            })}
+          </BulletList>
         </div>
       )
     })

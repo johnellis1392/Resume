@@ -37,13 +37,13 @@ export default class Resume extends Component {
       <div className={styles.wrapper}>
         <Header data={header} className={styles.header} />
         <Spacer className={styles.spacer} />
-        <ProfessionalSummary data={professionalSummary} className={styles.professionalSummary} />
+        <ProfessionalSummary data={professionalSummary} className={`${styles.professionalSummary} ${styles.section}`} />
         <Spacer className={styles.spacer} />
-        <WorkExperience data={workExperience} className={styles.workExperience} />
+        <WorkExperience data={workExperience} className={`styles.workExperience ${styles.section}`} />
         <Spacer className={styles.spacer} />
-        <ProjectExperience data={projectExperience} className={styles.projectExperience} />
+        <ProjectExperience data={projectExperience} className={`styles.projectExperience ${styles.section}`} />
         <Spacer className={styles.spacer} />
-        <Education data={education} className={styles.education} />
+        <Education data={education} className={`styles.education ${styles.section}`} />
       </div>
     )
   }

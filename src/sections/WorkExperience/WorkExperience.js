@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import GlobalStyles from 'common/styles/GlobalStyles.scss'
+import { BulletList } from 'common/components'
 import styles from './WorkExperience.scss'
 import _ from 'underscore'
 
@@ -42,6 +43,7 @@ export default class WorkExperience extends Component {
   }
 
   _renderWorkHistory = (jobs) => {
+    // {this._renderItemList(items)}
     return _.map(jobs, ({company, position, subtitle, items}, index) => {
       return (
         <div key={index} className={styles.job}>
@@ -51,9 +53,13 @@ export default class WorkExperience extends Component {
             <div className={styles.position}>{position}</div>
           </div>
           <div className={styles.subtitle}>{subtitle}</div>
-          <div className={styles.itemList}>
-            {this._renderItemList(items)}
-          </div>
+          <BulletList className={styles.itemList}>
+            {_.map(items, ({description}, index) => {
+              return (
+                <div key={index} className={styles.description}>{description}</div>
+              )
+            })}
+          </BulletList>
         </div>
       )
     })

@@ -1,32 +1,74 @@
+$sidePaddingLarge: 300px;
+$sidePaddingMedium: 50px;
+$sidePaddingSmall: 30px;
+
+$verticalPadding: 50px;
+$sectionPaddingTop: 15px;
+$sectionPaddingBottom: 30px;
+
 .wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 50px 100px;
+  padding: $verticalPadding $sidePaddingLarge;
 
-  .header {
-    width: 100%;
-  }
 
-  .education {
+  .section {
     width: 100%;
-  }
-
-  .professionalSummary {
-    width: 100%;
-  }
-
-  .projectExperience {
-    width: 100%;
-  }
-
-  .workExperience {
-    width: 100%;
+    padding-top: $sectionPaddingTop;
+    padding-bottom: $sectionPaddingBottom;
   }
 
   .spacer {
     width: 100%;
   }
 
+
+  .header {
+    padding-bottom: 10px;
+  }
+
+  .education {
+    /* */
+  }
+
+  .professionalSummary {
+    /* */
+  }
+
+  .projectExperience {
+    /* */
+  }
+
+  .workExperience {
+    /* */
+  }
+
+}
+
+
+@media (min-width: 1300px) {
+  .wrapper {
+    padding: $verticalPadding $sidePaddingLarge;
+  }
+}
+
+
+@media (max-width: 1300px) and (min-width: 800px) {
+  .wrapper {
+    padding: $verticalPadding $sidePaddingMedium;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+  .wrapper {
+    padding: $verticalPadding $sidePaddingSmall;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding: $verticalPadding 20px;
+  }
 }
 

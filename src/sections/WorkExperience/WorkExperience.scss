@@ -1,3 +1,7 @@
+$summaryPadding: 10px;
+$subheaderColor: #888;
+$bulletMargin: 50px;
+
 .wrapper {
   .header {
     /* */
@@ -9,16 +13,24 @@
         display: flex;
         flex-direction: row;
 
-        .company { /* */ }
-        .position { /* */ }
+        .company {
+          padding-right: $summaryPadding;
+          font-weight: bold;
+        }
+
+        .position {
+          padding-left: $summaryPadding;
+        }
       }
 
       .subtitle {
-        /* */
+        color: $subheaderColor;
       }
 
       .itemList {
         .item {
+          margin-left: $bulletMargin;
+
           .description { /* */ }
         }
       }

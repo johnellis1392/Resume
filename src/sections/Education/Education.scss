@@ -1,24 +1,33 @@
+$subtitleColor: #888;
+
 .wrapper {
   .header { /* */ }
 
-  .title {
-    display: flex;
-    flex-direction: row;
-
-    .location {
-      padding-right: 10px;
-    }
-
-    .rewards {
-      padding-left: 10px;
-    }
-  }
-
-  .subtitle { /* */ }
-
   .sources {
     .source {
-      .description { /* */ }
+      .title {
+        display: flex;
+        flex-direction: row;
+
+        .location {
+          padding-right: 10px;
+          font-weight: bold;
+        }
+
+        .rewards {
+          padding-left: 10px;
+        }
+      }
+
+      .subtitle {
+        color: $subtitleColor;
+      }
+
+      .items {
+        padding: 5px 0 15px 0;
+        
+        .item { /* */ }
+      }
     }
   }
 }

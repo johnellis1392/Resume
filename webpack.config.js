@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/assets'
+    publicPath: '/assets/'
   },
   devServer: {
     contentBase: path.resolve(__dirname, './src'),
@@ -41,6 +41,7 @@ module.exports = {
       // { test: /.css$/, loader: 'style-loader!css-loader' },
       // { test: /\.(woff2?|ttf|eot|svg)$/, loader: 'url?limit=10000' },
       // { test: /bootstrap\/dist\/js\/umd\//, loader: 'imports?jQuery=jquery' }, // Load bootstrap content
+      // { test: /\.png$/, loader: 'file-loader?name=/assets/[name].[ext]' },
       { test: /\.json$/, loader: 'json-loader'},
     ]
   },
@@ -48,7 +49,8 @@ module.exports = {
   resolve: {
     modules: [
       path.resolve('./src'),
-      path.resolve('./node_modules')
+      path.resolve('./node_modules'),
+      path.resolve('./src/common/styles/images/')
     ]
   },
 
