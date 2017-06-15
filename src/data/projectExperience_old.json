@@ -1,0 +1,46 @@
+{
+  "header": "Project Experience",
+  "projects": [
+    {
+      "title": "Senior Project: Volunteer Social Media Platform",
+      "subtitle": "January 2015 - December 2015",
+      "url": "https://github.com/johnellis1392/seniorproject-yeoman",
+      "items": [
+        {
+          "description": "Managed group of five to ensure that deliverables were met on time and within a hypothetical budget"
+        },
+        {
+          "description": "Regularly communicated with clients to update progress, deliver reports, and discuss project details"
+        },
+        {
+          "description": "Created dynamic user experience using MongoDB, Angular.js, and Node.js"
+        },
+        {
+          "description": "Streamlined development by scaffolding application boilerplate with Yeoman"
+        },
+        {
+          "description": "Wrote extensive unit and integration tests with Karma and Protractor"
+        }
+      ]
+    },
+    {
+      "title": "Scheme Interpreter",
+      "subtitle": "December 2015 - January 2016",
+      "url": "https://github.com/johnellis1392/Haskell-Scheme",
+      "items": [
+        {
+          "description": "Followed the Wikibook “Write yourself a Scheme in 48 hours” to learn Haskell design patterns"
+        },
+        {
+          "description": "Created scalable input parsing mechanism using Parsec parser-combinator library"
+        },
+        {
+          "description": "Added exception-handling logic via Monads and strongly-typed error checking"
+        },
+        {
+          "description": "Mitigated mutable state with pure functions and type-level abstractions"
+        }
+      ]
+    }
+  ]
+}

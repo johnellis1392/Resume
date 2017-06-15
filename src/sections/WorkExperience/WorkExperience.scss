@@ -16,10 +16,13 @@ $bulletMargin: 50px;
         .company {
           padding-right: $summaryPadding;
           font-weight: bold;
+          // font-size: 16px;
         }
 
         .position {
           padding-left: $summaryPadding;
+          font-style: italic;
+          font-size: 14px;
         }
       }
 
@@ -37,4 +40,3 @@ $bulletMargin: 50px;
     }
   }
 }
-

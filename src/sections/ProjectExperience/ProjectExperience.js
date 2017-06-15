@@ -33,11 +33,15 @@ export default class ProjectExperience extends Component {
 
 
   _renderProjectItems = (projects) => {
-    return _.map(projects, ({title, subtitle, url, items}, index) => {
+    return _.map(projects, ({title, description, subtitle, url, items}, index) => {
       return (
         <div key={index} className={styles.project}>
-          <div className={styles.title}>{title}</div>
-          <div className={styles.subtitle}>{subtitle}</div>
+          <div className={styles.titleContainer}>
+            <div className={styles.title}>{title}</div>
+            <span> / </span>
+            <div className={styles.subtitle}>{subtitle}</div>
+          </div>
+          <div className={styles.projectDescription}>{description}</div>
           <BulletList className={styles.items}>
             {_.map(items, ({description}, index) => {
               return (
@@ -68,5 +72,3 @@ export default class ProjectExperience extends Component {
     )
   }
 }
-
-

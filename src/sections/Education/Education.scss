@@ -16,6 +16,7 @@ $subtitleColor: #888;
 
         .rewards {
           padding-left: 10px;
+          font-style: italic;
         }
       }
 
@@ -25,10 +26,9 @@ $subtitleColor: #888;
 
       .items {
         padding: 5px 0 15px 0;
-        
+
         .item { /* */ }
       }
     }
   }
 }
-

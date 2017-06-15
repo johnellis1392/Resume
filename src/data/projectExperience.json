@@ -2,28 +2,92 @@
   "header": "Project Experience",
   "projects": [
     {
-      "title": "Senior Project: Volunteer Social Media Platform",
-      "subtitle": "January 2015 - December 2015",
-      "url": "https://github.com/johnellis1392/seniorproject-yeoman",
+      "title": "Splice Machine",
+      "subtitle": "Distributed Cluster Management",
+      "description": "Digital Foundry, January 2017 - April 2017",
       "items": [
-        { "description": "Managed group of five to ensure that deliverables were met on time and within a hypothetical budget" },
-        { "description": "Regularly communicated with clients to update progress, deliver reports, and discuss project details" },
-        { "description": "Created dynamic user experience using MongoDB, Angular.js, and Node.js" },
-        { "description": "Streamlined development by scaffolding application boilerplate with Yeoman" },
-        { "description": "Wrote extensive unit and integration tests with Karma and Protractor" }
+        {
+          "description": "Technologies: React, Redux, Docker, Docker Compose, Node.js, Elasticsearch, Stripe, Auth0, Mocha"
+        },
+        {
+          "description": "Constructed an extensive library of reusable components to minimize development overhead"
+        },
+        {
+          "description": "Found the best possible solutions to difficult problems by learning advanced use-cases for libraries like React and Redux"
+        },
+        {
+          "description": "Used docker, docker-compose, and node.js to create mock implementations of third-part dependencies"
+        },
+        {
+          "description": "Presented detailed overviews of the system architecture during knowledge transfer meetings"
+        }
       ]
     },
     {
-      "title": "Scheme Interpreter",
-      "subtitle": "December 2015 - January 2016",
-      "url": "https://github.com/johnellis1392/Haskell-Scheme",
+      "title": "HMH",
+      "subtitle": "EBook Content Access for Mobile",
+      "description": "Digital Foundry, October 2016 - December 2017",
       "items": [
-        { "description": "Followed the Wikibook “Write yourself a Scheme in 48 hours” to learn Haskell design patterns" },
-        { "description": "Created scalable input parsing mechanism using Parsec parser-combinator library" },
-        { "description": "Added exception-handling logic via Monads and strongly-typed error checking" },
-        { "description": "Mitigated mutable state with pure functions and type-level abstractions" }
+        {
+          "description": "Technologies: Backbone, Marionette, Mustache, Mocha, Objective-C"
+        },
+        {
+          "description": "Exceeded expectations by learning fast and taking on a larger work-load than expected"
+        },
+        {
+          "description": "Enrolled in online iOS classes to better facilitate my transition into the project"
+        },
+        {
+          "description": "Translated user stories and high-level design specifications into robust implementations"
+        },
+        {
+          "description": "Co-opted with fellow employees to keep responsibilities while under-staffed"
+        }
+      ]
+    },
+    {
+      "title": "Factor Chain",
+      "subtitle": "Software Security Investigation",
+      "description": "Digital Foundry, April 2017 - May 2017",
+      "items": [
+        {
+          "description": "Technologies: React, Redux, Vagrant, Virtualbox, Cassandra, Django, Mocha"
+        },
+        {
+          "description": "Used React and Redux to construct a responsive user experience"
+        },
+        {
+          "description": "Automated common startup procedures and configurations with virtualbox and vagrant"
+        },
+        {
+          "description": "Integrated with an existing Django API by reading code first-hand"
+        },
+        {
+          "description": "Contributed to regular code reviews and approved pull requests from fellow teammates"
+        }
+      ]
+    },
+    {
+      "title": "Polk University",
+      "subtitle": "Classroom Management System",
+      "description": "Inspironix, September 2015 - March 2016",
+      "items": [
+        {
+          "description": "Technologies: ASP.net, Visual Basic, Entity Framework, MySQL"
+        },
+        {
+          "description": "Incentivized code-reuse by creating stateless service classes for factoring out common logic"
+        },
+        {
+          "description": "Discussed possible solutions with teammates to ensure application quality"
+        },
+        {
+          "description": "Designed custom data models by translating supplied paper forms into SQL schemas"
+        },
+        {
+          "description": "Integrated with hardware drivers to create custom ID-card printer and scanner services"
+        }
       ]
     }
   ]
 }
-

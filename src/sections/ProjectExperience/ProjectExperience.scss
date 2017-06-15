@@ -1,3 +1,5 @@
+$titlePadding: 6px;
+$descriptionColor: #333;
 $subheaderColor: #888;
 $projectWidth: 48%;
 
@@ -9,7 +11,7 @@ $projectWidth: 48%;
   .projects {
     position: relative;
     width: 100%;
-    
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -17,15 +19,30 @@ $projectWidth: 48%;
 
     .project {
       width: $projectWidth;
+      padding-bottom: 10px;
 
-      .title {
-        font-weight: bold;
+      .titleContainer {
+        display: flex;
+        flex-direction: row;
+
+        .title {
+          padding-right: $titlePadding;
+          font-weight: bold;
+          // font-size: 16px;
+        }
+
+        .subtitle {
+          padding-left: $titlePadding;
+          color: $descriptionColor;
+          font-style: italic;
+          font-size: 14px;
+        }
       }
 
-      .subtitle {
+      .projectDescription {
         color: $subheaderColor;
       }
-      
+
       .items {
         .item {
           /* */
@@ -34,5 +51,3 @@ $projectWidth: 48%;
     }
   }
 }
-
-
