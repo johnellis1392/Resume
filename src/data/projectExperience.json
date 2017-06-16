@@ -7,16 +7,16 @@
       "description": "Digital Foundry, January 2017 - April 2017",
       "items": [
         {
-          "description": "Technologies: React, Redux, Docker, Docker Compose, Node.js, Elasticsearch, Stripe, Auth0, Mocha"
+          "description": "Technologies: React, Redux, Docker & Docker Compose, Node.js, Elasticsearch, Stripe, Auth0, Mocha"
         },
         {
           "description": "Constructed an extensive library of reusable components to minimize development overhead"
         },
         {
-          "description": "Found the best possible solutions to difficult problems by learning advanced use-cases for libraries like React and Redux"
+          "description": "Researched the best possible solutions to difficult problems by learning advanced use-cases for libraries like React and Redux"
         },
         {
-          "description": "Used docker, docker-compose, and node.js to create mock implementations of third-part dependencies"
+          "description": "Used docker, docker-compose, and node.js to create mock implementations of third-party api dependencies"
         },
         {
           "description": "Presented detailed overviews of the system architecture during knowledge transfer meetings"
@@ -29,7 +29,7 @@
       "description": "Digital Foundry, October 2016 - December 2017",
       "items": [
         {
-          "description": "Technologies: Backbone, Marionette, Mustache, Mocha, Objective-C"
+          "description": "Technologies: Objective-C, Backbone, Marionette, Mustache, Mocha"
         },
         {
           "description": "Exceeded expectations by learning fast and taking on a larger work-load than expected"
@@ -41,7 +41,7 @@
           "description": "Translated user stories and high-level design specifications into robust implementations"
         },
         {
-          "description": "Co-opted with fellow employees to keep responsibilities while under-staffed"
+          "description": "Co-opted with fellow employees to distribute important responsibilities while under-staffed"
         }
       ]
     },
@@ -54,16 +54,16 @@
           "description": "Technologies: React, Redux, Vagrant, Virtualbox, Cassandra, Django, Mocha"
         },
         {
-          "description": "Used React and Redux to construct a responsive user experience"
+          "description": "Constructed dynamic, responsive user experiences with React and Redux"
         },
         {
           "description": "Automated common startup procedures and configurations with virtualbox and vagrant"
         },
         {
-          "description": "Integrated with an existing Django API by reading code first-hand"
+          "description": "Integrated with an existing Django API by deconstructing existing solutions"
         },
         {
-          "description": "Contributed to regular code reviews and approved pull requests from fellow teammates"
+          "description": "Arbitrated quality solutions by contributing to regular code reviews and approving pull requests"
         }
       ]
     },
@@ -79,10 +79,10 @@
           "description": "Incentivized code-reuse by creating stateless service classes for factoring out common logic"
         },
         {
-          "description": "Discussed possible solutions with teammates to ensure application quality"
+          "description": "Verified designs and implementations with teammates to maintain clear goals"
         },
         {
-          "description": "Designed custom data models by translating supplied paper forms into SQL schemas"
+          "description": "Designed custom data models by translating client-supplied documents into SQL schemas"
         },
         {
           "description": "Integrated with hardware drivers to create custom ID-card printer and scanner services"
