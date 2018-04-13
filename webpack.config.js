@@ -18,7 +18,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /.js$/,
+        test: /\.js$/,
         exclude: [/node_modules/],
         use: [
           {
@@ -30,7 +30,7 @@ module.exports = {
         ]
       },
       {
-        test: /.scss$/,
+        test: /\.scss$/,
         exclude: /node_modules/,
         use: [
           'style-loader',
@@ -38,7 +38,7 @@ module.exports = {
           'sass-loader',
         ]
       },
-      // { test: /.css$/, loader: 'style-loader!css-loader' },
+      // { test: /\.css$/, loader: 'style-loader!css-loader' },
       // { test: /\.(woff2?|ttf|eot|svg)$/, loader: 'url?limit=10000' },
       // { test: /bootstrap\/dist\/js\/umd\//, loader: 'imports?jQuery=jquery' }, // Load bootstrap content
       // { test: /\.png$/, loader: 'file-loader?name=/assets/[name].[ext]' },
